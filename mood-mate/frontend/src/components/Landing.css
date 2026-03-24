@@ -1,0 +1,41 @@
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* 💜 Violet + Purple */
+  background: linear-gradient(135deg, #5f0a87, #a4508b);
+  color: white;
+}
+
+.title {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+/* Glow */
+.glow {
+  text-shadow:
+    0 0 10px #fff,
+    0 0 20px #a4508b,
+    0 0 40px #5f0a87;
+}
+
+/* Simple clean button */
+.btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}

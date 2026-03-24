@@ -1,0 +1,313 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  background: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 230px;
+  background: #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+/* MENU */
+.menu {
+  padding: 10px 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+  color: #ccc;
+  transition: 0.2s;
+}
+
+.menu:hover {
+  background: #1e1e1e;
+  color: white;
+}
+
+/* ACTIVE MENU */
+.menu.active {
+  background: #ff4d6d;
+  color: white;
+}
+
+/* SIDEBAR IMAGE CARD */
+.sidebar-card {
+  margin: 20px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #181818;
+}
+
+.sidebar-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.sidebar-card p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* 🔥 FIXED LANGUAGES SECTION */
+.sidebar .section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.sidebar .section button {
+  display: inline-block;
+  padding: 8px 14px;
+
+  border-radius: 20px;
+  border: none;
+
+  background: #1e1e1e;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.sidebar .section button:hover {
+  background: #333;
+}
+
+/* ACTIVE (MATCH MOODS) */
+.sidebar .section button.active {
+  background: #ff4d6d;
+  color: white;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 20px;
+  background: #121212;
+  overflow-y: auto;
+}
+
+/* SEARCH */
+.search {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+/* MOODS */
+.moods {
+  margin-bottom: 20px;
+}
+
+.moods button {
+  margin-right: 10px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  background: #1e1e1e;
+  color: white;
+  cursor: pointer;
+}
+
+.moods .active {
+  background: #ff4d6d;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: #181818;
+  padding: 12px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* TEXT */
+.card h4 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+.card button {
+  margin-top: 8px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #ff4d6d;
+  color: white;
+  cursor: pointer;
+}
+
+/* PLAYER */
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 230px;
+  right: 0;
+  height: 80px;
+  background: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-top: 1px solid #333;
+}
+
+/* LEFT */
+.player-left {
+  display: flex;
+  align-items: center;
+}
+
+.player-left img {
+  width: 50px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+/* CENTER */
+.player-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CONTROLS */
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.controls button {
+  background: #282828;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #ff4d6d;
+}
+
+/* ACTIVE CONTROL */
+.active-btn {
+  background: #ff4d6d !important;
+}
+
+/* PROGRESS */
+.progress-bar {
+  width: 300px;
+  height: 5px;
+  background: #444;
+  border-radius: 10px;
+}
+
+.progress {
+  height: 5px;
+  background: #ff4d6d;
+  border-radius: 10px;
+}
+
+/* CARD ACTIONS */
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.card-actions button {
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* YOUTUBE PLAYER */
+.yt-player {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 400px;
+  background: #111;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.yt-info {
+  margin-bottom: 5px;
+}
+
+.yt-player iframe {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* WAVE */
+.yt-player::after {
+  content: "";
+  display: block;
+  height: 5px;
+  margin-top: 5px;
+  background: linear-gradient(90deg, #ff00cc, #333, #ff00cc);
+  animation: wave 1s infinite linear;
+}
+
+@keyframes wave {
+  0% { background-position: 0% }
+  100% { background-position: 100% }
+}
